@@ -2,8 +2,13 @@ import sqlite3
 import pandas as pd
 import random
 from datetime import datetime, timedelta
+import os
 
-DB_PATH = "../data/raw/procurement.db"
+script_dir = os.path.dirname(os.path.abspath(__file__))
+data_raw_dir = os.path.join(script_dir, "..", "data", "raw")
+os.makedirs(data_raw_dir, exist_ok=True) 
+
+DB_PATH = os.path.join(data_raw_dir, "procurement.db")
 
 # PO Master Data 
 po_data = []
@@ -66,8 +71,8 @@ df_blocker.to_sql("blocker_log", conn, if_exists="replace", index=False)
 conn.close()
 
 # Export CSVs for easy dashboard ingestion
-df_po.to_csv("../data/raw/po_master.csv", index=False)
-df_poe.to_csv("../data/raw/poe_log.csv", index=False)
-df_blocker.to_csv("../data/raw/blocker_log.csv", index=False)
+df_po.to_csv(os.path.join(data_raw_dir, "po_master.csv"), index=False)
+df_poe.to_csv(os.path.join(data_raw_dir, "poe_log.csv"), index=False)
+df_blocker.to_csv(os.path.join(data_raw_dir, "blocker_log.csv"), index=False)
 
 print("Mock data generated in /data/raw/")
