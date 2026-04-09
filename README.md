@@ -20,6 +20,7 @@ This project automates the lifecycle of marketing POs from creation to payment, 
 
 ## Project Structure
 procurement_audit_tracker/
+
 ├── data/ # raw, processed, verified folders
 
 ├── watcher/ # incoming & verified (POE drops)
