@@ -1,0 +1,6 @@
+pandas
+sqlalchemy
+watchdog
+openpyxl
+plotly
+dash

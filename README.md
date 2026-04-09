@@ -36,7 +36,7 @@ procurement_audit_tracker/
 ```bash
 git clone https://github.com/KhalidAlao/Procurement-Audit-KPI-Tracker
 cd procurement-audit-kpi-tracker
-python setup_project.py          # creates folders & installs deps
+python3 setup_project.py          # creates folders & installs deps
 cd procurement_audit_tracker
 python scripts/main_pipeline.py  # generates data, runs audit, starts watcher
 # In another terminal:
