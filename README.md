@@ -1,6 +1,6 @@
 # Automated Procurement Audit & KPI Tracker
 
-**Simulates a real‑world “data supply chain” for Purchase Orders (POs) and Proof‑of‑Execution (POE) documents.
+Simulates a real‑world data supply chain for Purchase Orders (POs) and Proof‑of‑Execution (POE) documents.
 
 This project automates the lifecycle of marketing POs from creation to payment, identifies operational blockers, and delivers a live dashboard for stakeholders. It mirrors the EMEA partner ecosystem and demonstrates skills in data operations, business intelligence, and client‑facing automation.
 
